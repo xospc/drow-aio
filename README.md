@@ -5,6 +5,9 @@ Prometheus http query client for Python asyncio.
 Implemented prometheus http api:
 https://prometheus.io/docs/prometheus/latest/querying/api/
 
+[![PyPI Version][pypi-badge]][pypi]
+[![Build Status][qaci-badge]][qaci]
+
 ## install
 
     pip install drow-aio
@@ -35,3 +38,8 @@ query range:
         print(s.metric)
         for p in s.values:
             print(p.timestamp, p.value)
+
+[pypi-badge]: https://img.shields.io/pypi/v/drow-aio "PyPI Version"
+[pypi]: https://pypi.org/project/drow-aio "PyPI Version"
+[qaci-badge]: https://img.shields.io/github/check-runs/xospc/drow-aio/main "Build Status"
+[qaci]: https://github.com/xospc/drow-aio/actions "Build Status"
